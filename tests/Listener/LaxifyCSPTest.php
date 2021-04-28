@@ -25,7 +25,6 @@ declare(strict_types=1);
 namespace OCA\HMREnabler\Tests\Listener;
 
 use OCA\HMREnabler\AppInfo\Application;
-use OCA\HMREnabler\Listener\LaxifyCSP;
 use OCA\HMREnabler\Tests\TestCase;
 use OC\Security\CSP\ContentSecurityPolicyManager;
 use OCP\EventDispatcher\IEventDispatcher;
@@ -56,7 +55,6 @@ class EmailNotificationTest extends TestCase {
 
 		$this->dispatcher = \OC::$server->query(IEventDispatcher::class);
 		$this->contentSecurityPolicyManager = new ContentSecurityPolicyManager($this->dispatcher);
-
 	}
 
 	public function testCSPAreTweaked(): void {
