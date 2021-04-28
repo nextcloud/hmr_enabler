@@ -11,7 +11,7 @@
     <author mail="louis@chmn.me">Louis Chemineau</author>
     <namespace>HMREnabler</namespace>
     <category>tool</category>
-    <bugs>https://github.com/nextcloud/hmr-enabler</bugs>
+    <bugs>https://github.com/nextcloud/hmr_enabler</bugs>
     <dependencies>
         <nextcloud min-version="22" max-version="22" />
     </dependencies>

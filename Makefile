@@ -4,10 +4,10 @@ app_name=$(notdir $(CURDIR))
 build_tools_directory=$(CURDIR)/build/tools
 composer=$(shell which composer 2> /dev/null)
 
-all: dev-setup lint build-js-production test
+all: test
 
 # Dev env management
-dev-setup: clean clean-dev composer npm-init
+dev-setup: composer npm-init
 
 
 # Installs and updates the composer dependencies. If composer is not installed
@@ -24,43 +24,6 @@ else
 	composer install --prefer-dist
 	composer update --prefer-dist
 endif
-
-npm-init:
-	npm ci
-
-npm-update:
-	npm update
-
-# Building
-build-js:
-	npm run dev
-
-build-js-production:
-	npm run build
-
-watch-js:
-	npm run watch
-
-# Linting
-lint:
-	npm run lint
-
-lint-fix:
-	npm run lint:fix
-
-# Style linting
-stylelint:
-	npm run stylelint
-
-stylelint-fix:
-	npm run stylelint:fix
-
-# Cleaning
-clean:
-	rm -rf js/*
-
-clean-dev:
-	rm -rf node_modules
 
 # Tests
 test:
