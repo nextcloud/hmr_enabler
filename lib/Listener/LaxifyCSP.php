@@ -9,7 +9,7 @@ use OCP\AppFramework\Http\ContentSecurityPolicy;
 
 class LaxifyCSP implements IEventListener {
 	public function handle(Event $event): void {
-		if (!($event instanceOf AddContentSecurityPolicyEvent)) {
+		if (!($event instanceof AddContentSecurityPolicyEvent)) {
 			return;
 		}
 
