@@ -15,6 +15,7 @@ To install it change into your Nextcloud's apps directory:
 Then run:
 
     git clone https://github.com/nextcloud/hmr_enabler.git
-    cd hmr_enabler
+
+Install the dependencies using:
+
     make composer
-    php occ app:enable hmr_enabler
