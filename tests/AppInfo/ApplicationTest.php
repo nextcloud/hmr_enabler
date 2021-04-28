@@ -33,7 +33,6 @@ use OCA\HMREnabler\Tests\TestCase;
 /**
  * Class ApplicationTest
  *
- * @group DB
  * @package OCA\HMREnabler\Tests\AppInfo
  */
 class ApplicationTest extends TestCase {

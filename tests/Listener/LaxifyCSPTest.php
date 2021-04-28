@@ -34,7 +34,6 @@ use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 /**
  * Class LaxifyCSPTest
  *
- * @group DB
  * @package OCA\HMREnabler\Tests\Listener
  */
 class EmailNotificationTest extends TestCase {
@@ -61,9 +60,9 @@ class EmailNotificationTest extends TestCase {
 	}
 
 	public function testCSPAreTweaked(): void {
-		$csp = $this->contentSecurityPolicyManager->getDefaultPolicy();
+		$csp = $this->contentSecurityPolicyManager->getDefaultPolicy()->buildPolicy();
 
-		// $this.assertSame($csp->allowedScriptDomains[1], '*');
-		// $this.assertEquals($csp->allowedConnectDomains[1], '*');
+		$this->assertStringContainsString("script-src 'self' *", $csp);
+		$this->assertStringContainsString("connect-src 'self' *", $csp);
 	}
 }
