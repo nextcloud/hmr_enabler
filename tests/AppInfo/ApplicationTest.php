@@ -22,7 +22,7 @@ declare(strict_types=1);
  *
  */
 
-namespace OCA\Activity\Tests\AppInfo;
+namespace OCA\HMREnabler\Tests\AppInfo;
 
 use OC\Files\View;
 use OCP\IL10N;
