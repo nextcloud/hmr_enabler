@@ -5,7 +5,7 @@
     <summary>Enable hot module replacement for webpack apps.</summary>
     <description>
         This application enable hot module replacement for front-end apps built by webpack. It tweaks the CSP to allow the front application to connect to the webpack dev server. This is a security hazard, do not enable on a production server.
-    </description>
+</description>
     <version>1.0.0</version>
     <licence>agpl</licence>
     <author mail="louis@chmn.me">Louis Chemineau</author>
@@ -13,6 +13,6 @@
     <category>tool</category>
     <bugs>https://github.com/nextcloud/hmr_enabler</bugs>
     <dependencies>
-        <nextcloud min-version="22" max-version="22" />
+        <nextcloud min-version="22" max-version="25" />
     </dependencies>
 </info>
