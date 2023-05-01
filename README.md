@@ -21,7 +21,7 @@ Install the dependencies using:
 
 ## Use in your app
 
-To use HMR in your app you either need to enable the `hot` option in the devServer of webpack or use the [`@nextcloud/webpack-vue-config`](https://github.com/nextcloud/webpack-vue-config/).
+To use HMR in your app, use the [`@nextcloud/webpack-vue-config`](https://github.com/nextcloud/webpack-vue-config/).
 Afterwards add a line like the following to your scripts in package.json:
 
     "serve": "webpack serve --node-env development --allowed-hosts all",
