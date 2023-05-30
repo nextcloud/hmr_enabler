@@ -24,9 +24,9 @@ declare(strict_types=1);
 
 namespace OCA\HMREnabler\Tests\Listener;
 
+use OC\Security\CSP\ContentSecurityPolicyManager;
 use OCA\HMREnabler\AppInfo\Application;
 use OCA\HMREnabler\Tests\TestCase;
-use OC\Security\CSP\ContentSecurityPolicyManager;
 use OCP\EventDispatcher\IEventDispatcher;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 

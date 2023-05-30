@@ -2,10 +2,10 @@
 
 namespace OCA\HMREnabler\Listener;
 
-use OCP\Security\CSP\AddContentSecurityPolicyEvent;
+use OCP\AppFramework\Http\ContentSecurityPolicy;
 use OCP\EventDispatcher\Event;
 use OCP\EventDispatcher\IEventListener;
-use OCP\AppFramework\Http\ContentSecurityPolicy;
+use OCP\Security\CSP\AddContentSecurityPolicyEvent;
 
 class LaxifyCSP implements IEventListener {
 	public function handle(Event $event): void {

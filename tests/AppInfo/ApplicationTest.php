@@ -25,10 +25,10 @@ declare(strict_types=1);
 namespace OCA\HMREnabler\Tests\AppInfo;
 
 use OC\Files\View;
-use OCP\IL10N;
 use OCA\HMREnabler\AppInfo\Application;
 use OCA\HMREnabler\Listener\LaxifyCSP;
 use OCA\HMREnabler\Tests\TestCase;
+use OCP\IL10N;
 
 /**
  * Class ApplicationTest
