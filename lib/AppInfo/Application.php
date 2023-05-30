@@ -3,11 +3,11 @@
 namespace OCA\HMREnabler\AppInfo;
 
 use OCA\HMREnabler\Listener\LaxifyCSP;
-use OCP\Security\CSP\AddContentSecurityPolicyEvent;
 use OCP\AppFramework\App;
-use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IBootContext;
+use OCP\AppFramework\Bootstrap\IBootstrap;
 use OCP\AppFramework\Bootstrap\IRegistrationContext;
+use OCP\Security\CSP\AddContentSecurityPolicyEvent;
 
 class Application extends App implements IBootstrap {
 	public const APP_ID = 'hmr_enabler';
