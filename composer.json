@@ -2,7 +2,7 @@
     "name": "nextcloud/hmr-enabler",
     "description": "Nextcloud HMR Enabler",
     "type": "project",
-    "license": "AGPL",
+    "license": "AGPL-3.0-or-later",
     "authors": [
         {
             "name": "Louis Chemineau",
