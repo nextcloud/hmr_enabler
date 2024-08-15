@@ -13,6 +13,6 @@
     <category>tools</category>
     <bugs>https://github.com/nextcloud/hmr_enabler</bugs>
     <dependencies>
-        <nextcloud min-version="26" max-version="30" />
+        <nextcloud min-version="26" max-version="31" />
     </dependencies>
 </info>
