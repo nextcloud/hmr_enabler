@@ -62,7 +62,7 @@ class ApplicationTest extends TestCase {
 			[LaxifyCSP::class],
 		];
 	}
-	
+
 	/**
 	 * @dataProvider queryData
 	 * @param string $service
