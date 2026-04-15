@@ -1,25 +1,10 @@
 <?php
 
 declare(strict_types=1);
+
 /**
- * @copyright Copyright (c) 2016, ownCloud, Inc.
- *
- * @author Joas Schilling <coding@schilljs.com>
- *
- * @license AGPL-3.0
- *
- * This code is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Affero General Public License, version 3,
- * as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Affero General Public License for more details.
- *
- * You should have received a copy of the GNU Affero General Public License, version 3,
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
- *
+ * SPDX-FileCopyrightText: 2021 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-License-Identifier: AGPL-3.0-or-later
  */
 
 namespace OCA\HMREnabler\Tests\AppInfo;
@@ -28,7 +13,9 @@ use OC\Files\View;
 use OCA\HMREnabler\AppInfo\Application;
 use OCA\HMREnabler\Listener\LaxifyCSP;
 use OCA\HMREnabler\Tests\TestCase;
+use OCP\AppFramework\IAppContainer;
 use OCP\IL10N;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 /**
  * Class ApplicationTest
@@ -36,11 +23,8 @@ use OCP\IL10N;
  * @package OCA\HMREnabler\Tests\AppInfo
  */
 class ApplicationTest extends TestCase {
-	/** @var Application */
-	protected $app;
-
-	/** @var IAppContainer */
-	protected $container;
+	protected Application $app;
+	protected IAppContainer $container;
 
 	protected function setUp(): void {
 		parent::setUp();
@@ -53,7 +37,7 @@ class ApplicationTest extends TestCase {
 		$this->assertEquals('hmr_enabler', $this->container->getAppName());
 	}
 
-	public function queryData(): array {
+	public static function queryData(): array {
 		return [
 			[IL10N::class],
 			[View::class],
@@ -63,11 +47,7 @@ class ApplicationTest extends TestCase {
 		];
 	}
 
-	/**
-	 * @dataProvider queryData
-	 * @param string $service
-	 * @param string $expected
-	 */
+	#[DataProvider('queryData')]
 	public function testContainerQuery(string $service, ?string $expected = null): void {
 		if ($expected === null) {
 			$expected = $service;
