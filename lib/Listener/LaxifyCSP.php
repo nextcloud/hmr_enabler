@@ -17,12 +17,8 @@ class LaxifyCSP implements IEventListener {
 			return;
 		}
 
-		$csp = new ContentSecurityPolicy();
-
-		// Allow vue dev tool to work on Firefox.
-		$csp->allowEvalScript(true);
-
 		// Unblock HMR requests.
+		$csp = new ContentSecurityPolicy();
 		$csp->addAllowedConnectDomain('*');
 		$csp->addAllowedScriptDomain('*');
 
