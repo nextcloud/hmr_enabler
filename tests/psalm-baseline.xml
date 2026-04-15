@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.30.0@d0bc6e25d89f649e4f36a534f330f8bb4643dd69">
-  <file src="lib/Listener/LaxifyCSP.php">
-    <DeprecatedMethod occurrences="2">
-      <code>allowEvalScript</code>
-      <code>allowInlineScript</code>
-    </DeprecatedMethod>
-  </file>
-</files>
+<files psalm-version="6.16.1@f1f5de594dc76faf8784e02d3dc4716c91c6f6ac"/>
