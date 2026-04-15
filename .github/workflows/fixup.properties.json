@@ -1,5 +1,0 @@
-{
-    "name": "Block fixup and squash commits",
-    "description": "Prevent fixup and squash commits from being merged.",
-    "iconName": "fixup"
-}

@@ -11,6 +11,8 @@ updates:
   labels:
   - 3. to review
   - dependencies
+  cooldown:
+    default-days: 10
 - package-ecosystem: npm
   directory: "/"
   schedule:
@@ -22,3 +24,5 @@ updates:
   labels:
   - 3. to review
   - dependencies
+  cooldown:
+    default-days: 10
