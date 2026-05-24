@@ -1,11 +1,11 @@
 # SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
 # SPDX-License-Identifier: MIT
-d00c282925ce19918cc26ec0827d9726 dependabot-approve-merge.yml
+56cf6e8b165be4343be41f47c1e79a9c dependabot-approve-merge.yml
 2581a67c5bcdcd570427e6d51db767d7 fixup.yml
 80a58e5584612def0e751fcfb7669814 lint-info-xml.yml
-058024e4560ae1f18f6e4be9ecc0dacb lint-php-cs.yml
-d86aa09feb6ce2ad244926aff7adcb36 lint-php.yml
-10d907363827d671d37831b78c0a1137 phpunit-sqlite.yml
-a9c8cb17ea6ef415b6a847e0639775e7 psalm-matrix.yml
+a674b6e725bcbc1064f7b68c678a2df6 lint-php-cs.yml
+6078222f7c61540504fa9892729f4a04 lint-php.yml
+d17de282ccd37f12a5fd78d68a74df96 phpunit-sqlite.yml
+fb5b97180b546fb4f5e489799f48bf19 psalm-matrix.yml
 9dc6b717be0006fc7974a50351686fd7 sync-workflow-templates.yml
-c967649adbf47f18e16520e9c1e3c755 update-nextcloud-ocp-matrix.yml
+92e22ed25d7d25df0eefbb165550eb0f update-nextcloud-ocp-matrix.yml
